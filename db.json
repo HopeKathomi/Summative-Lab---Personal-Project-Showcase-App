@@ -1,0 +1,60 @@
+{
+  "coffees": [
+    {
+      "id": 1,
+      "coffee_name": "Kenya AA",
+      "description": "A premium Kenyan coffee with a rich body, bright acidity, and notes of blackcurrant, berries, and citrus.",
+      "origin": "Nyeri, Kenya",
+      "price": 1800
+    },
+    {
+      "id": 2,
+      "coffee_name": "Kenya AB",
+      "description": "A smooth and well-balanced coffee with fruity acidity, caramel sweetness, and a pleasant lingering finish.",
+      "origin": "Kirinyaga, Kenya",
+      "price": 1600
+    },
+    {
+      "id": 3,
+      "coffee_name": "Kenya Peaberry",
+      "description": "A vibrant coffee known for its concentrated flavor, lively acidity, and hints of berries and dark chocolate.",
+      "origin": "Embu, Kenya",
+      "price": 2000
+    },
+    {
+      "id": 4,
+      "coffee_name": "Kiambu Coffee",
+      "description": "A full-bodied coffee with balanced acidity and rich flavors of chocolate, caramel, and red fruits.",
+      "origin": "Kiambu, Kenya",
+      "price": 1500
+    },
+    {
+      "id": 5,
+      "coffee_name": "Kericho Coffee",
+      "description": "A smooth and aromatic coffee with mild acidity, sweet caramel notes, and subtle citrus flavors.",
+      "origin": "Kericho, Kenya",
+      "price": 1400
+    },
+    {
+      "id": 6,
+      "coffee_name": "Bungoma Coffee",
+      "description": "A naturally sweet coffee with a medium body and tasting notes of berries, honey, and milk chocolate.",
+      "origin": "Bungoma, Kenya",
+      "price": 1300
+    },
+    {
+      "id": 7,
+      "coffee_name": "Meru Coffee",
+      "description": "A bright and refreshing coffee featuring citrus acidity, floral aromas, and a sweet fruity finish.",
+      "origin": "Meru, Kenya",
+      "price": 1550
+    },
+    {
+      "id": 8,
+      "coffee_name": "Murang'a Coffee",
+      "description": "A balanced Kenyan coffee with a pleasant aroma, berry acidity, chocolate undertones, and a smooth finish.",
+      "origin": "Murang'a, Kenya",
+      "price": 1450
+    }
+  ]
+}
