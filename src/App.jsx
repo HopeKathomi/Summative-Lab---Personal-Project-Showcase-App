@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import Landingpage from './components/Landingpage'
 import Nav from './components/common/Nav'
-import Products from './components/Products'
+import ProductList from './components/ProductList'
+import Administrator from './components/Administrator'
 
 function App() {
 
@@ -9,7 +10,8 @@ function App() {
     <div >
       <Nav/>
       <Landingpage/>
-      <Products/>
+      <ProductList/>
+      <Administrator/>
     </div>
   )
 }
