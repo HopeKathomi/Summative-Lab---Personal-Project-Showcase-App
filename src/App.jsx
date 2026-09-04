@@ -1,15 +1,15 @@
 import { useState } from 'react'
 import Landingpage from './components/Landingpage'
 import Nav from './components/common/Nav'
-// import './App.css'
+import Products from './components/Products'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className='bg-green-300'>
+    <div >
       <Nav/>
       <Landingpage/>
+      <Products/>
     </div>
   )
 }
