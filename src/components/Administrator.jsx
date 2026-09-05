@@ -9,16 +9,15 @@ const Administrator = () => {
   const [showEdit, setShowEdit] = useState(false);
   const [showAdd, setShowAdd] = useState(false);
 
-
-  function handleClick(e){
+  function handleClick(e, id){
     e.preventDefault()
-    // console.log(coffees[0].id)
-    handleDelete()
+    handleDelete(id)
   }
+
   return (
-    <div className=' fixed inset-0 overflow-y-auto gap-5 p-20'>
+    <div className='fixed inset-0 overflow-y-auto flex flex-col gap-5 p-20'>
       {coffees.map(coffee=>(
-        <div key={coffee.id} className=' b shadow-taupe-200 shadow-md flex flex-col p-5 border border-taupe-200 rounded-2xl'>
+        <div key={coffee.id} className='shadow-taupe-200 shadow-md flex flex-col p-5 border border-taupe-200 rounded-2xl'>
           <div className='bg-taupe-200 py-3 px-3 rounded-2xl'>
             <div>{coffee.coffee_name}</div>
             <div>{coffee.origin}</div>
@@ -35,12 +34,9 @@ const Administrator = () => {
             </div>
 
             <div>
-              <button onClick={handleClick} className='bg-red-400 px-4 py-1 rounded-full'>Delete</button>              
+              <button onClick={(e) => handleClick(e,coffee.id)} className='bg-red-400 px-4 py-1 rounded-full'>Delete</button>              
             </div>          
           </div>
-          <Routes>
-            <Route path="/Edit" element ={<Edit/>}/>
-          </Routes>
         </div>
         
       ))}

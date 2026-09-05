@@ -3,6 +3,7 @@ import { UserContext } from '../App'
 
 const Product = () => {
   const {coffees} = useContext(UserContext);
+  
   return (
     <div className='bg-amber-100 flex flex-row flex-wrap justify-center items-center gap-7 '>
       {coffees.map(coffee => (

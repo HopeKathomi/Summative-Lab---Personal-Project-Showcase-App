@@ -9,7 +9,7 @@ export const UserContext = createContext(null);
 
 function App() {
   const [coffees, getCoffee] = useState([]);
-
+  console.log("C", coffees)
   function handleCreate(formData){
     fetch('http://localhost:3000/coffees',{
       method:"POST",
@@ -19,19 +19,22 @@ function App() {
       body: JSON.stringify(formData)
     })
     .then(response => response.json())
-    .then(newCoffee => getCoffee(coffee => [...coffee, newCoffee]))
+    .then(newCoffee => getCoffee(prevCoffee => [...prevCoffee, newCoffee]))
   }
 
   function handleUpdate(){
-    
+    fetch
   }
 
-  function handleDelete(id){
-    fetch(`http://localhost:3000/coffees/${id}`,{
-      method:"DELETE"
+  function handleDelete(id) {
+    fetch(`http://localhost:3000/coffees/${id}`, {
+      method: "DELETE"
     })
-    .then(results => results.json())
-    .then(data =>console.log(data))
+      .then(() => {
+        getCoffee(prevCoffees =>
+          prevCoffees.filter(coffee => coffee.id !== id)
+        );
+      });
   }
 
   useEffect(()=>{
@@ -43,11 +46,11 @@ function App() {
   return (
     <div >
       <Nav/>
-       <UserContext value={{coffees, handleDelete}}>
+       <UserContext value={{coffees, handleDelete, handleCreate}}>
         <Routes>
           <Route path="/" element={<Landingpage/>}/>
           <Route path='/products' element={<ProductList />}/>
-          <Route path='/administrator' element={<Administrator/>}/>
+          <Route path='/administrator/*' element={<Administrator/>}/>
         </Routes>    
        </UserContext>
     </div>
