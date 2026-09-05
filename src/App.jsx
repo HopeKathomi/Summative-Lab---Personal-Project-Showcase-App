@@ -5,10 +5,34 @@ import ProductList from './components/ProductList';
 import Administrator from './components/Administrator';
 import {Route, Routes} from "react-router";
 
-export const userContext = createContext(null);
+export const UserContext = createContext(null);
 
 function App() {
   const [coffees, getCoffee] = useState([]);
+
+  function handleCreate(formData){
+    fetch('http://localhost:3000/coffees',{
+      method:"POST",
+      headers: {
+        'Content-Type':'application/json'
+      },
+      body: JSON.stringify(formData)
+    })
+    .then(response => response.json())
+    .then(newCoffee => getCoffee(coffee => [...coffee, newCoffee]))
+  }
+
+  function handleUpdate(){
+    
+  }
+
+  function handleDelete(id){
+    fetch(`http://localhost:3000/coffees/${id}`,{
+      method:"DELETE"
+    })
+    .then(results => results.json())
+    .then(data =>console.log(data))
+  }
 
   useEffect(()=>{
     fetch('http://localhost:3000/coffees')
@@ -19,11 +43,13 @@ function App() {
   return (
     <div >
       <Nav/>
-      <Routes>
-        <Route path="/" element={<Landingpage/>}/>
-        <Route path='/products' element={<ProductList coffees = {coffees}/>}/>
-        <Route path='/administrator' element={<Administrator coffees = {coffees}/>}/>
-      </Routes>    
+       <UserContext value={{coffees, handleDelete}}>
+        <Routes>
+          <Route path="/" element={<Landingpage/>}/>
+          <Route path='/products' element={<ProductList />}/>
+          <Route path='/administrator' element={<Administrator/>}/>
+        </Routes>    
+       </UserContext>
     </div>
   )
 }

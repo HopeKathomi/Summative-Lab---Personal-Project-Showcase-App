@@ -2,10 +2,10 @@
   "coffees": [
     {
       "id": 1,
-      "coffee_name": "Kenya AA",
-      "description": "A premium Kenyan coffee with a rich body, bright acidity, and notes of blackcurrant, berries, and citrus.",
-      "origin": "Nyeri, Kenya",
-      "price": 1800
+      "coffee_name": "Vanilla Latte",
+      "description": "A smooth espresso drink with steamed milk and vanilla flavor.",
+      "origin": "Kisumu, Kenya",
+      "price": 1350
     },
     {
       "id": 2,
