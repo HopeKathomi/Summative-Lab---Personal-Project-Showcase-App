@@ -48,6 +48,13 @@
       "description": "A sweet and aromatic coffee with notes of red berries, honey, and gentle citrus acidity.",
       "origin": "Rwanda",
       "price": 670
+    },
+    {
+      "coffee_name": "Coffee",
+      "description": "nice",
+      "origin": "Kisumu",
+      "price": "1200",
+      "id": 9
     }
   ]
 }

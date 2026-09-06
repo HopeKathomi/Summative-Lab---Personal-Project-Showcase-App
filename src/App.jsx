@@ -4,12 +4,13 @@ import Nav from './components/common/Nav';
 import ProductList from './components/ProductList';
 import Administrator from './components/Administrator';
 import {Route, Routes} from "react-router";
+import Add from './components/pages/Add';
 
 export const UserContext = createContext(null);
 
 function App() {
   const [coffees, getCoffee] = useState([]);
-  console.log("C", coffees)
+
   function handleCreate(formData){
     fetch('http://localhost:3000/coffees',{
       method:"POST",
