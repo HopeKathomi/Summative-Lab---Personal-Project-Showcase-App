@@ -7,7 +7,7 @@ import Add from './pages/Add'
 const Administrator = () => {
   const {coffees, handleDelete} = useContext(UserContext);
   const [selectedCoffee, setSelectedCoffee] = useState(null);
-  //  const [showEdit, setShowEdit] = useState(false);
+  const [showEdit, setShowEdit] = useState(false);
   const [showAdd, setShowAdd] = useState(false);
 
   function handleClick(e, id){
@@ -42,7 +42,7 @@ const Administrator = () => {
             </div>
           </div>
         ))}
-        {selectedCoffee && <Edit selectedCoffee={selectedCoffee}/>}
+        {selectedCoffee && <Edit setShowEdit={setShowEdit} selectedCoffee={selectedCoffee}/>}
       </div>
       
     </div>

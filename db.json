@@ -50,11 +50,18 @@
       "price": 670
     },
     {
-      "coffee_name": "Coffee",
+      "coffee_name": "Kisumu Coffee",
       "description": "nice",
       "origin": "Kisumu",
       "price": "1200",
       "id": 9
+    },
+    {
+      "coffee_name": "kafen",
+      "description": "very very nice",
+      "origin": "kwale",
+      "price": "1200",
+      "id": 10
     }
   ]
 }

@@ -11,6 +11,13 @@ export const UserContext = createContext(null);
 function App() {
   const [coffees, getCoffee] = useState([]);
 
+  useEffect(()=>{
+    fetch('http://localhost:3000/coffees')
+    .then(response => response.json())
+    .then(data => getCoffee(data))
+  },[]);
+
+
   function handleCreate(formData){
     fetch('http://localhost:3000/coffees',{
       method:"POST",
@@ -21,10 +28,6 @@ function App() {
     })
     .then(response => response.json())
     .then(newCoffee => getCoffee(prevCoffee => [...prevCoffee, newCoffee]))
-  }
-
-  function handleUpdate(){
-    fetch
   }
 
   function handleDelete(id) {
@@ -38,12 +41,7 @@ function App() {
       });
   }
 
-  useEffect(()=>{
-    fetch('http://localhost:3000/coffees')
-    .then(response => response.json())
-    .then(data => getCoffee(data))
-  },[])
-
+  
   return (
     <div >
       <Nav/>
