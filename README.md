@@ -539,5 +539,5 @@ The project provides both a **customer-facing product catalogue** and an **admin
 ## License
 MIT
 
-## Auther
+## Author
 Hope Kathomi
