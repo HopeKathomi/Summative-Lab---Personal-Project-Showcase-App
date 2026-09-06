@@ -2,59 +2,59 @@
   "coffees": [
     {
       "id": 1,
-      "coffee_name": "Kenya AA",
-      "description": "A premium Kenyan coffee with a rich body, bright acidity, and notes of blackcurrant, berries, and citrus.",
-      "origin": "Nyeri, Kenya",
-      "price": 1800
+      "coffee_name": "Ethiopian Yirgacheffe",
+      "description": "A bright and floral coffee with notes of jasmine, citrus, and sweet berries.",
+      "origin": "Ethiopia",
+      "price": 650
     },
     {
       "id": 2,
-      "coffee_name": "Kenya AB",
-      "description": "A smooth and well-balanced coffee with fruity acidity, caramel sweetness, and a pleasant lingering finish.",
-      "origin": "Kirinyaga, Kenya",
-      "price": 1600
-    },
-    {
-      "id": 3,
-      "coffee_name": "Kenya Peaberry",
-      "description": "A vibrant coffee known for its concentrated flavor, lively acidity, and hints of berries and dark chocolate.",
-      "origin": "Embu, Kenya",
-      "price": 2000
+      "coffee_name": "Kenyan AA",
+      "description": "A rich and vibrant coffee with a full body and notes of blackcurrant, berries, and citrus.",
+      "origin": "Kenya",
+      "price": 700
     },
     {
       "id": 4,
-      "coffee_name": "Kiambu Coffee",
-      "description": "A full-bodied coffee with balanced acidity and rich flavors of chocolate, caramel, and red fruits.",
-      "origin": "Kiambu, Kenya",
-      "price": 1500
+      "coffee_name": "Brazilian Santos",
+      "description": "A smooth coffee with low acidity and rich flavors of chocolate, nuts, and caramel.",
+      "origin": "Brazil",
+      "price": 550
     },
     {
       "id": 5,
-      "coffee_name": "Kericho Coffee",
-      "description": "A smooth and aromatic coffee with mild acidity, sweet caramel notes, and subtle citrus flavors.",
-      "origin": "Kericho, Kenya",
-      "price": 1400
+      "coffee_name": "Guatemalan Antigua",
+      "description": "A complex coffee with cocoa, spice, and dark chocolate notes with a pleasant smoky finish.",
+      "origin": "Guatemala",
+      "price": 680
     },
     {
       "id": 6,
-      "coffee_name": "Bungoma Coffee",
-      "description": "A naturally sweet coffee with a medium body and tasting notes of berries, honey, and milk chocolate.",
-      "origin": "Bungoma, Kenya",
-      "price": 1300
+      "coffee_name": "Costa Rican Tarrazú",
+      "description": "A clean and bright coffee with honey sweetness, citrus acidity, and a smooth finish.",
+      "origin": "Costa Rica",
+      "price": 720
     },
     {
       "id": 7,
-      "coffee_name": "Meru Coffee",
-      "description": "A bright and refreshing coffee featuring citrus acidity, floral aromas, and a sweet fruity finish.",
-      "origin": "Meru, Kenya",
-      "price": 1550
+      "coffee_name": "Sumatra Mandheling",
+      "description": "A full-bodied coffee with earthy flavors, dark chocolate notes, and a subtle herbal finish.",
+      "origin": "Indonesia",
+      "price": 750
     },
     {
       "id": 8,
-      "coffee_name": "Murang'a Coffee",
-      "description": "A balanced Kenyan coffee with a pleasant aroma, berry acidity, chocolate undertones, and a smooth finish.",
-      "origin": "Murang'a, Kenya",
-      "price": 1450
+      "coffee_name": "Rwandan Bourbon",
+      "description": "A sweet and aromatic coffee with notes of red berries, honey, and gentle citrus acidity.",
+      "origin": "Rwanda",
+      "price": 670
+    },
+    {
+      "coffee_name": "Kisumu Coffee",
+      "description": "Improves your proficiency in english",
+      "origin": "Kisumu",
+      "price": "1200",
+      "id": 9
     }
   ]
 }
