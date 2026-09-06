@@ -10,7 +10,8 @@ const Search = () => {
     setSearchWord(e.target.value);
   }
   return (
-    <div>Search
+    <div className='flex flex-row items-center justify-center gap-3 w-250 rounded-2xl bg-amber-200 py-3 px-3'>
+      <p>Search</p>
       <input type="search" value={searchWord} onChange={handleChange}className='bg-white border border-slate-200 rounded-xl py-2 px-3' />
     </div>
   )

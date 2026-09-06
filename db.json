@@ -51,17 +51,10 @@
     },
     {
       "coffee_name": "Kisumu Coffee",
-      "description": "nice",
+      "description": "Improves your proficiency in english",
       "origin": "Kisumu",
       "price": "1200",
       "id": 9
-    },
-    {
-      "coffee_name": "kafen",
-      "description": "very very nice",
-      "origin": "kwale",
-      "price": "1200",
-      "id": 10
     }
   ]
 }
