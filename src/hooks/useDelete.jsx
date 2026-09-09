@@ -1,6 +1,10 @@
-import React from 'react'
+import {useContext} from 'react'
+import { UserContext } from '../App'
 
-function useDelete(id) {
+function useDelete() {
+  const {getCoffee} = useContext(UserContext);
+
+  function handleDelete(id){
     fetch(`http://localhost:3000/coffees/${id}`, {
       method: "DELETE"
     })
@@ -9,5 +13,8 @@ function useDelete(id) {
           prevCoffees.filter(coffee => coffee.id !== id)
         );
       });
+  }
+
+  return handleDelete;
   }
 export default useDelete

@@ -33,7 +33,7 @@ function App() {
   return (
     <div >
       <Nav/>
-       <UserContext value={{coffees, handleCreate}}>
+       <UserContext value={{coffees, getCoffee, handleCreate}}>
         <Routes>
           <Route path="/" element={<Landingpage/>}/>
           <Route path='/products' element={<ProductList />}/>

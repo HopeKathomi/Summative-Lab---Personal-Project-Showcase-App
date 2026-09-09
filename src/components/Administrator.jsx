@@ -11,10 +11,7 @@ const Administrator = () => {
   const [showEdit, setShowEdit] = useState(false);
   const [showAdd, setShowAdd] = useState(false);
 
-  function handleClick(e, id){
-    e.preventDefault()
-    useDelete(id)
-  }
+  const handleClick = useDelete();
 
   return (
     <div className='fixed inset-0 overflow-y-auto flex flex-row justify-center gap-5 p-20'>
@@ -38,7 +35,7 @@ const Administrator = () => {
               </div>
 
               <div>
-                <button onClick={(e) => handleClick(e,coffee.id)} className='bg-red-400 px-4 py-1 rounded-full'>Delete</button>              
+                <button onClick={() => handleClick(coffee.id)} className='bg-red-400 px-4 py-1 rounded-full'>Delete</button>              
               </div>          
             </div>
           </div>
