@@ -29,23 +29,11 @@ function App() {
     .then(response => response.json())
     .then(newCoffee => getCoffee(prevCoffee => [...prevCoffee, newCoffee]))
   }
-
-  function handleDelete(id) {
-    fetch(`http://localhost:3000/coffees/${id}`, {
-      method: "DELETE"
-    })
-      .then(() => {
-        getCoffee(prevCoffees =>
-          prevCoffees.filter(coffee => coffee.id !== id)
-        );
-      });
-  }
-
   
   return (
     <div >
       <Nav/>
-       <UserContext value={{coffees, handleDelete, handleCreate}}>
+       <UserContext value={{coffees, handleCreate}}>
         <Routes>
           <Route path="/" element={<Landingpage/>}/>
           <Route path='/products' element={<ProductList />}/>

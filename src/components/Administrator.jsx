@@ -3,16 +3,17 @@ import { UserContext } from '../App'
 import { useNavigate } from "react-router-dom";
 import Edit from './pages/Edit'
 import Add from './pages/Add'
+import useDelete from '../hooks/useDelete';
 
 const Administrator = () => {
-  const {coffees, handleDelete} = useContext(UserContext);
+  const {coffees} = useContext(UserContext);
   const [selectedCoffee, setSelectedCoffee] = useState(null);
   const [showEdit, setShowEdit] = useState(false);
   const [showAdd, setShowAdd] = useState(false);
 
   function handleClick(e, id){
     e.preventDefault()
-    handleDelete(id)
+    useDelete(id)
   }
 
   return (
